@@ -1,0 +1,33 @@
+<launch>
+	<node pkg="rosserial_python" type="serial_node.py" name="serial1" output="screen">
+		<param name="port" value="/dev/ttyACM0"/>
+		<param name="baud" value="57600"/>
+	</node>
+
+	<node pkg="rosserial_python" type="serial_node.py" name="serial2" output="screen">
+		<param name="port" value="/dev/ttyACM1"/>
+		<param name="baud" value="57600"/>
+	</node>
+
+	<node pkg="rosserial_python" type="serial_node.py" name="serial3" output="screen">
+		<param name="port" value="/dev/ttyACM2"/>
+		<param name="baud" value="57600"/>
+	</node>
+
+	<node pkg="rosserial_python" type="serial_node.py" name="serial4" output="screen">
+		<param name="port" value="/dev/ttyACM3"/>
+		<param name="baud" value="57600"/>
+	</node>
+
+	<node pkg="rosserial_python" type="serial_node.py" name="serial5" output="screen">
+		<param name="port" value="/dev/ttyACM4"/>
+		<param name="baud" value="57600"/>
+	</node>
+	
+	<node pkg="omnirobot" type="fuzzybicycle" name="fuzzybicycle" output="screen"> 
+	</node>
+	
+	<node pkg="omnirobot" type="fuzzy" name="fuzzy"> 
+	</node>
+	
+</launch>
